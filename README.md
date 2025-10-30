@@ -43,17 +43,7 @@ python3 password-hash-checker.py
 
 ---
 
-## Contenido (script)
 
-```python
-import hashlib
-
-password = input("Introduce una contraseña: ")
-
-for algo in ['md5', 'sha1', 'sha256']:
-    hash_value = getattr(hashlib, algo)(password.encode()).hexdigest()
-    print(f"{algo.upper()}: {hash_value}")
-```
 
 ---
 
